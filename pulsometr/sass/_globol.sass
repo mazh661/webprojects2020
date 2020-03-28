@@ -1,0 +1,74 @@
+.bg
+    width: 100%
+    height: 100%
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: #000
+        z-index: -1
+
+a 
+    text-decoration: none
+    color: #ffffff
+
+form
+    display: flex
+    flex-direction: column
+    input
+        width: 300px
+        height: 50px
+        border-radius: 4px
+        margin-bottom: 15px
+        padding-left: 20px
+$primary: #c70101
+
+.btn
+    text-transform: uppercase
+    padding: 10px 20px
+    background-color: $primary
+    font-size: 10px
+    border-radius: 4px
+    max-width: 300px
+    text-align: center
+    &-big
+        padding: 15px 40px
+        font-size: 12px
+
+.title
+    text-transform: uppercase
+    font-size: 28px
+    text-align: center
+.wrap
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    flex-wrap: wrap
+
+.row
+    display: flex
+    flex-direction: column
+
+.col
+    display: flex
+    align-items: center
+    justify-content: center
+
+.item
+    text-align: center
+    flex: 0 0 33.333%
+    &__title
+        font-size: 16px
+        font-weight: 700
+    &__descr
+        font-size: 14px
+
+
+.menu
+    display: flex
+    justify-content: center
+    align-items: center

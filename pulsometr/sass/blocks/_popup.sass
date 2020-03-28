@@ -1,0 +1,56 @@
+.popup
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background-color: rgba(#000, .8)
+    visibility: hidden
+    opacity: 0
+    &_active
+        opacity: 1
+        visibility: visible
+    &__item
+        text-align: center
+        position: fixed
+        top: 120px
+        left: 50%
+        transform: translatex(-50%)
+        padding: 40px
+        background-color: #e8e8e8
+        display: flex
+        flex-direction: column
+        align-items: center
+        opacity: 0  
+        visibility: hidden
+        span
+            display: block
+            cursor: pointer
+        &_active
+            opacity: 1
+            visibility: visible
+            .left
+                position: absolute
+                top: 0
+                right: -30px
+                width: 20px
+                height: 1px
+                background-color: #000000
+                transform: rotate(45deg)
+            .right
+                position: absolute
+                content: ''
+                top: 0
+                right: -30px
+                width: 20px
+                height: 1px
+                background-color: #000000
+                transform: rotate(-45deg)
+                
+
+    &__title
+        font-size: 20px
+    &__suptitle
+        font-size: 15px
+        margin-top: 10px
+        margin-bottom: 20px

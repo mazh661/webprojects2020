@@ -1,0 +1,74 @@
+.catalog
+    padding: 50px
+    &__item
+        max-width: 300px
+        height: 440px
+        border: 1px solid #e8e8e8
+        margin-right: 20px
+        padding: 20px 0 26px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            bottom: 68px
+            left: 20px
+            width: 260px
+            height: 1px
+            background-color: #e8e8e8
+        &:last-child
+            margin-right: 0
+        .item
+            &__title
+                margin-top: 20px
+            &__descr
+                margin-top: 16px
+            &__link
+                margin-top: 17px
+                a 
+                    color: $primary
+                    text-decoration: underline
+            &__footer
+                margin-top: 28px
+                padding: 0 20px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                span
+                    display: block
+                    font-size: 12px
+                    color: #e8e8e8
+                    text-align: left
+                    text-decoration: line-through
+        
+    &__col
+        margin-top: 20px
+    &__menu
+        margin-top: 69px
+        .menu
+            &__item
+                margin-left: 20px
+                width: 220px
+                height: 50px
+                display: flex
+                align-items: center
+                justify-content: center
+                text-transform: uppercase
+                font-style: normal
+                position: relative
+                color: #e8e8e8
+                background: transparent 
+                &::before
+                    position: absolute
+                    content: ''
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    right: 0
+                    border: 1px solid #e8e8e8
+                    transform: skew(20deg)
+                    z-index: -1
+                &_active
+                    &::before
+                        background-color: $primary
+
+                
